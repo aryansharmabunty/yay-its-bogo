@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F6F7;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width: 580px;
+    height: 560px;
+    position: absolute  ;
+    top: 15%;
+    left: 36%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container{
+    text-align: center;
+
+    .heading{
+        color: #FF6B82;
+        font-weight: 700;
+        font-size: large;
+    }
+}
+
+.parent-coupon-container{
+    margin: 0rem 4rem 1rem 4rem;
+    display: flex;
+    width: 120%;
+    height: 79px;
+}
+    .child-coupon-container-1{ 
+        border: 1px solid;
+        border-radius: 12px 0px 0px 12px;
+        width: 13%;
+        border-style: hidden;
+        background-color: #FF6B82;
+    }
+
+    .child-coupon-container-1 > p{
+        text-align: center;
+        margin: 14px;
+        color: #FFFFFF;
+        width: 64%;
+    }
+
+    .child-coupon-container-2{
+        border: 1px solid rgb(214, 214, 214);
+        border-radius: 0px 12px 12px 0px;
+        width: 50%;
+        height: max-content;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .child-coupon-container-2:hover{
+        background-color: #fff3f5;
+    }
+
+#coupon-radio{
+    accent-color: #FF6B82;
+    cursor: pointer;
+}
+
+.radio-button{
+    margin: 0.8rem 0rem 1rem 0.5rem;
+    display: flex;
+}
+
+label[for="coupon-radio"]{
+    display: flex;
+    flex-direction: column;
+    
+    .coupon-title, .coupon-amount{
+        display: flex;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .discount{
+        background-color: #FF6B82;
+        color: #FFFFFF;
+        margin-left: 5px;
+        padding: 0px 3px;
+    }
+    
+    .discount-amount{
+        margin-left: 5px;
+        color: #9F9F9F;
+        text-decoration: line-through
+    }
+}
+
+label[for="coupon-radio"] > div > p {
+    margin: 0px;
+}
+
+table{
+    margin: 0rem 0rem 1rem 0.8rem;
+    width: 70%;
+}
+
+td{
+    padding: 0px 5px;
+}
+
+select{
+    width: -webkit-fill-available;
+    margin-left: 12px;
+}
+
+.dropdown-parent {
+    display: none;
+}
+
+.add-to-cart{
+    text-align:center; 
+    background-color: #FF6B82; 
+    width: 100%; 
+    border-style: hidden; 
+    border-radius: 4px; 
+    padding: 1rem 0rem; 
+    color: white;
+    margin-top: 1rem
+}
+
