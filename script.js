@@ -134,6 +134,7 @@ function display(index) {
         prevContainer1.style.display = 'block';
         prevDropdownParent.style.display = 'none';
         containers[activeIndex].querySelector('.child-coupon-container-2').style.backgroundColor = "";
+        containers[activeIndex].querySelector('.child-coupon-container-2').style.borderRadius = "0px 12px 12px 0px";
     }
 
     const container1 = containers[index].querySelector('.child-coupon-container-1');
