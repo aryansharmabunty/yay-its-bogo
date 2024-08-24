@@ -1,17 +1,27 @@
-body {
+* {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
     background-color: #F6F6F7;
 }
 
 .container{
+    margin: auto;
     background-color: #FFFFFF;
-    width: 580px;
-    height: 560px;
-    position: absolute  ;
+    /* width: 100%;
+    height: 560px; */
+    /* position: absolute  ;
     top: 15%;
-    left: 36%;
+    left: 36%; */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 442px;
+    height: 551px;
+    padding: 20px;
 }
 
 .header-container{
@@ -25,10 +35,9 @@ body {
 }
 
 .parent-coupon-container{
-    margin: 0rem 4rem 1rem 4rem;
+    margin-top: 1rem;
     display: flex;
-    width: 120%;
-    height: 79px;
+    width: 100%;
 }
     .child-coupon-container-1{ 
         border: 1px solid;
@@ -43,12 +52,14 @@ body {
         margin: 14px;
         color: #FFFFFF;
         width: 64%;
+        display:flex;
+        flex-direction: column
     }
 
     .child-coupon-container-2{
         border: 1px solid rgb(214, 214, 214);
         border-radius: 0px 12px 12px 0px;
-        width: 50%;
+        width: 100%;
         height: max-content;
         cursor: pointer;
         display: flex;
@@ -75,7 +86,7 @@ label[for="coupon-radio"]{
     
     .coupon-title, .coupon-amount{
         display: flex;
-        margin-left: 5px;
+        margin: 0px 0px 2px 16px;
         cursor: pointer;
     }
 
@@ -91,6 +102,10 @@ label[for="coupon-radio"]{
         color: #9F9F9F;
         text-decoration: line-through
     }
+}
+
+.amount{
+    font-weight: 600;
 }
 
 label[for="coupon-radio"] > div > p {
@@ -123,6 +138,52 @@ select{
     border-radius: 4px; 
     padding: 1rem 0rem; 
     color: white;
-    margin-top: 1rem
+    margin-top: 1rem;
+    font-size: medium
 }
 
+.exampleContainer1{
+    margin-top: 1rem;
+    width:100%;
+    display:flex; 
+    justify-content: space-between;
+}
+
+.exampleContainer2{
+    width: 100%;
+}
+
+.free-delivery{
+    margin: 0px;
+    color:#FF6B82
+}
+
+.total{
+    margin: 0px 
+}
+
+.dashed-amount{
+    text-decoration: line-through;
+    color: lightslategray;
+}
+
+.most_popular{
+    color:#FF6B82;
+    text-align: center;
+    line-height: 54px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+.powered-by{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.poweredBy-label{
+    color: #c9c9c9;
+}
+
+.pumper{
+    color: red;
+}
